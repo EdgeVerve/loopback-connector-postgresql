@@ -1,0 +1,113 @@
+{
+  "name": "loopback-connector-evpostgresql",
+  "version": "1.1.2",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "posttest": "npm run lint",
+    "pretest": "node pretest.js",
+    "test": "mocha -R spec --timeout 10000 --require test/init.js test/*.test.js"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "bluebird": "^3.4.6",
+    "debug": "^2.1.1",
+    "loopback-connector": "^2.1.0",
+    "pg": "^6.0.0",
+    "strong-globalize": "^2.6.2"
+  },
+  "description": "Loopback EV PostgreSQL Connector",
+  "devDependencies": {
+    "eslint": "^2.13.1",
+    "eslint-config-loopback": "^4.0.0",
+    "loopback-datasource-juggler": "^3.0.0",
+    "mocha": "^2.1.0",
+    "rc": "^1.0.0",
+    "should": "^8.0.2",
+    "sinon": "^1.15.4"
+  },
+  "optionalDependencies": {},
+  "directories": {},
+  "keywords": [
+    "StrongLoop",
+    "LoopBack",
+    "PostgreSQL",
+    "DataSource",
+    "Connector"
+  ],
+  "license": "Artistic-2.0",
+  "maintainers": [
+    {
+      "name": "0candy",
+      "email": "ngcandy@ca.ibm.com"
+    },
+    {
+      "name": "amir-61",
+      "email": "amirali.jfr61@gmail.com"
+    },
+    {
+      "name": "bajtos",
+      "email": "mbajtoss@gmail.com"
+    },
+    {
+      "name": "chandadharap",
+      "email": "chanda_dharap@yahoo.com"
+    },
+    {
+      "name": "ibmcloud-admin",
+      "email": "rmg@ca.ibm.com"
+    },
+    {
+      "name": "kraman",
+      "email": "kraman@gmail.com"
+    },
+    {
+      "name": "octet",
+      "email": "vieuxtech@gmail.com"
+    },
+    {
+      "name": "qpresley",
+      "email": "qpresley@ca.ibm.com"
+    },
+    {
+      "name": "rfeng",
+      "email": "enjoyjava@gmail.com"
+    },
+    {
+      "name": "richardpringle",
+      "email": "rpring9@gmail.com"
+    },
+    {
+      "name": "ritch",
+      "email": "skawful@gmail.com"
+    },
+    {
+      "name": "rmg",
+      "email": "r.m.graham@gmail.com"
+    },
+    {
+      "name": "setogit",
+      "email": "setogit@gmail.com"
+    },
+    {
+      "name": "strongloop",
+      "email": "strngops@us.ibm.com"
+    },
+    {
+      "name": "superkhau",
+      "email": "superkhau@gmail.com"
+    },
+    {
+      "name": "tonyf-ibm",
+      "email": "tffrench@us.ibm.com"
+    }
+  ],
+  "readme": "ERROR: No README data found!",
+  "bugs": {
+    "url": "https://github.com/strongloop/loopback-connector-postgresql/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+http://10.73.53.167/evf/loopback-connector-evpostgresql.git"
+  }
+}
