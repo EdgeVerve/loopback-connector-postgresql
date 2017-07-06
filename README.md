@@ -294,9 +294,11 @@ Settings with properties of host, port, username, password, database are given i
 
 ## Multiple Versions of Apps running in parallel connected to same Postgres 
 
+### Dropping unsued columns
+
 By default the postgres connector will allow to run multiple versions of same application connected to same Postgres.
 With this, if there is any change in the Model properties difference from one version to another, the connector will
 not delete difference columns of the particular version.
 
-If there is a requirement to disable this functionality, disable it by using the property `'disableMultipleVersionSupport'`
+If there is a requirement to disable this functionality, disable it by using the property `'dropUnusedColumns'`
 setting it to true.
