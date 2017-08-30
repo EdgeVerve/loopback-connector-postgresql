@@ -104,10 +104,10 @@
   ],
   "readme": "ERROR: No README data found!",
   "bugs": {
-    "url": "https://github.com/strongloop/loopback-connector-postgresql/issues"
+    "url": "https://github.com/EdgeVerve/loopback-connector-postgresql/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+http://10.73.53.167/oecloud.io/loopback-connector-postgresql.git"
+    "url": "git+http://github.com/EdgeVerve/loopback-connector-postgresql.git"
   }
 }
