@@ -1,3 +1,14 @@
+2018-01-03, Version oe 1.2.0
+============================
+* Bug fixes
+* Version moved from alpha to stable 1.2.0
+
+previous changes
+================
+* added JSON support in query
+* added aggregation functions and group by
+* creating db and tables from models if not exists
+
 2016-10-14, Version 2.7.0
 =========================
 
