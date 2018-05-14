@@ -14,7 +14,8 @@
     "debug": "^2.1.1",
     "loopback-connector": "^2.1.0",
     "pg": "^6.0.0",
-    "strong-globalize": "^2.6.2"
+    "strong-globalize": "^2.6.2",
+    "uuid": "^3.1.0"
   },
   "description": "The modified postgresql connector for the LoopBack framework - customization done for oe-cloud.",
   "devDependencies": {
