@@ -109,6 +109,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+http://github.com/EdgeVerve/loopback-connector-postgresql.git"
+    "url": "git+https://github.com/EdgeVerve/loopback-connector-postgresql.git"
   }
 }

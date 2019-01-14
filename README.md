@@ -1,7 +1,7 @@
 ## loopback-connector-postgresql
 
 This is modified version of loopback-connector-postgresql which is loopback compliant connector for PostgreSQL.
-This version is named as loopback-connector-postgresql and is maintained at [evgit location](http://evgit/oecloud.io/loopback-connector-postgresql)
+This version is named as loopback-connector-postgresql and is maintained at [github location](https://github.com/EdgeVerve/loopback-connector-postgresql)
 Original loopback connector for PostgreSQL is maintained at [Github Location](http://docs.strongloop.com/display/LB/PostgreSQL+connector).
 
 
@@ -17,7 +17,7 @@ This will install the module from npm and add it as a dependency to the applicat
 Original Loopback connector for PostgreSQL has many limitations. Few of the limitations are
 * It does not support Array types.
 * It does not support JSON data type
-* 
+*
 
 
 Due to above limitations, oeCloud team has modified original loopback connector to support these features.
@@ -45,7 +45,7 @@ Due to above limitations, oeCloud team has modified original loopback connector 
   updated.(for example please refer the **Limitations** section).
 * In model definition, properties can include mapping to PostgreSQL column.
   The below example shows how a property "state" has its corresponding postgres column mapping configured inside it:
-  
+
   ```javascript
   "properties" : {
       "state": {
@@ -68,7 +68,7 @@ Due to above limitations, oeCloud team has modified original loopback connector 
   Here the property "state" has a maximum length of 20 in general and the corresponding postgres mapping of the property also sets
   the maximum length to 20.But a mismatch in both the values will lead to ambiguity and user will get unexpected results.
   For example :
-  
+
   ```javascript
   "properties" : {
       "state": {
@@ -99,7 +99,7 @@ Due to above limitations, oeCloud team has modified original loopback connector 
 * **ANY** Data type will not be supported. This is true also for Array type. As a developer, all data types must be fixed.
 If data type is of type **object**, queries may fail if data is not matching.
 In example below, if you execute query where myobject.value : 1, it may fail because in first record, value is integer (1) while in other record value is string ("B").
-As a developer, you should ensure that data is consistent. 
+As a developer, you should ensure that data is consistent.
 
 ```javascript
 [
@@ -126,8 +126,8 @@ In same example above, if you execute query { "where" : {"and" : [{"id" : 1}, {"
 * When we query a table in EDB with a column name which is not present, it fetches all the records.
 But unlike this mongo will fetch no records and give a blank array in response.
 
-Example : 
-Let's have a model with the following schema 
+Example :
+Let's have a model with the following schema
 
 ```
 {
@@ -146,7 +146,7 @@ Let's have a model with the following schema
 }
 ```
 
-So if we fire a query with a filter on column "names" which is not present in "Customer" table : 
+So if we fire a query with a filter on column "names" which is not present in "Customer" table :
 ```
 {"where": {"names": "George"}}
 ```
@@ -292,7 +292,7 @@ Database has large number of parameters to fine tune performance. In production,
 Also, application user will not have permissions to create database.
 Settings with properties of host, port, username, password, database are given importance over the URL property. URL property parsing is not done.
 
-## Multiple Versions of Apps running in parallel connected to same Postgres 
+## Multiple Versions of Apps running in parallel connected to same Postgres
 
 ### Dropping unsued columns
 
